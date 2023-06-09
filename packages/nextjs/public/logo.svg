@@ -1,10 +1,14 @@
-<svg width="103" height="102" viewBox="0 0 103 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.72229" y="0.99707" width="101.901" height="100.925" rx="19.6606" fill="black"/>
-<path d="M69.4149 42.5046L70.9118 39.812L72.5438 42.5046L83.0241 59.1906L70.9533 65.9361L59.1193 59.1906L69.4149 42.5046Z" fill="white"/>
-<path d="M70.9533 69.2496L60.6577 63.6876L70.9533 79.0719L81.184 63.4985L70.9533 69.2496Z" fill="white"/>
-<path d="M70.953 65.9259V41.8533V39.8499L83.063 59.1785L70.953 65.9259Z" fill="#DFDFDF"/>
-<path d="M70.9617 79.0499L71.0409 69.2969L81.2062 63.4629L70.9617 79.0499Z" fill="#DFDFDF"/>
-<path d="M34.409 21.6931V24.6125H34.4132L34.4124 27.747H26.8093L26.8093 27.7566H25.5383L21.3839 36.4914H34.4135V39.9723H34.4091L34.4135 69.4549C34.4135 73.5268 31.1126 76.8277 27.0408 76.8277H24.7346L19.8064 84.0772H62.4172L57.3539 76.8277H51.7795C47.7076 76.8277 44.4067 73.5268 44.4067 69.4549L44.4024 43.665C44.5071 39.7076 47.7304 36.5273 51.7046 36.4914H79.5481L74.6584 27.7566H53.6021L53.6021 27.747L44.3987 27.7469L44.3994 24.6125H44.4022V18.3245L34.409 21.6931Z" fill="white"/>
-<path d="M39.882 19.8517V76.5496C39.9731 74.9642 41.0475 70.8554 44.3648 69.1027V50.8665L44.4703 50.8998V43.8309C44.4703 39.7591 47.7712 36.4582 51.843 36.4582H79.5812L76.9508 31.8656H49.9083C46.1286 31.8656 44.3648 34.556 44.3648 34.556L44.4435 18.3066L39.882 19.8517Z" fill="#DFDFDF"/>
-<path d="M23.622 31.7927L21.3295 36.5083H34.4247V31.7927H23.622Z" fill="#DFDFDF"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="160.575 170.748 47.909 47.909" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="radialGradient21328" cx="30.070396" cy="41.590385" r="19.84375" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.1644523,-1.2251591,1.0987873,1.9411957,-57.392004,62.950006)" xlink:href="#linearGradient21326"/>
+    <linearGradient id="linearGradient21326">
+      <stop style="stop-color:#1e1af5;stop-opacity:1;" offset="0" id="stop21322"/>
+      <stop style="stop-color:#771af5;stop-opacity:1;" offset="1" id="stop21324"/>
+    </linearGradient>
+  </defs>
+  <rect style="fill:url(#radialGradient21328);fill-opacity:1;stroke:none;stroke-width:0.178243" id="rect17859-5" width="47.908768" height="47.908768" x="41.610775" y="63.187599" ry="8.3135586" transform="matrix(1, 0, 0, 1, 118.964691, 107.560043)"/>
+  <path id="path17861-9" style="fill:#ffffff;fill-opacity:1;stroke-width:0.137451" d="m 55.461025,72.318314 c -0.285968,0.0091 -0.571999,0.08469 -0.836595,0.228945 -0.591044,0.329881 -0.96192,0.948684 -0.96192,1.622195 v 26.898996 c 0,0.67351 0.370876,1.30552 0.96192,1.62164 0.274903,0.15122 0.591161,0.23382 0.893564,0.23382 0.343619,0 0.701296,-0.0962 1.003687,-0.28863 L 80.678707,89.178731 c 0.53604,-0.343604 0.852324,-0.934572 0.852324,-1.566843 0,-0.632271 -0.330022,-1.195543 -0.852324,-1.539174 l -5.903888,-3.225381 c -0.47835,1.128485 -1.243582,2.115015 -2.221142,2.863513 l 3.685445,1.928711 -18.865657,10.061356 V 77.57821 l 5.897924,3.663751 c 0.100495,-1.308339 0.565779,-2.563359 1.343873,-3.625235 L 56.521681,72.616168 C 56.196954,72.407412 55.8287,72.307172 55.461025,72.318314 Z" transform="matrix(1, 0, 0, 1, 118.964691, 107.560043)"/>
+  <text style="font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 6.56455px; font-family: &quot;Weather Icons&quot;; fill: rgb(255, 255, 255); stroke-width: 0.547045; white-space: pre;" x="66.084595" y="81.513359" id="text17865-4" transform="matrix(1, 0, 0, 1, 118.964691, 107.560043)"><tspan id="tspan17863-9" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Weather Icons';-inkscape-font-specification:'Weather Icons Bold';fill:#ffffff;stroke-width:0.547045" x="66.084595" y="81.513359">{ }</tspan></text>
+  <rect style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.87842;stroke-dasharray:none;stroke-opacity:1" id="rect17867-0" width="11.615613" height="11.246332" x="63.703857" y="73.983307" ry="2.7310944" transform="matrix(1, 0, 0, 1, 118.964691, 107.560043)"/>
 </svg>

@@ -11,3 +11,7 @@ node_modules
 .eslintcache
 .vscode/**
 .DS_Store
+node_modules
+.history
+.husky
+.github

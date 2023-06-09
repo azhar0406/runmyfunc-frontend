@@ -35,8 +35,10 @@ const Debug: NextPage = () => {
                     key={contractName}
                     onClick={() => setSelectedContract(contractName)}
                   >
-                    {contractName}
+                    {contractName}1
                   </button>
+
+                  
                 ))}
               </div>
             )}

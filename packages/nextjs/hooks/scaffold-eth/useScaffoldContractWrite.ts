@@ -21,6 +21,7 @@ export const useScaffoldContractWrite = <
 >({
   contractName,
   functionName,
+  cAddress,
   args,
   value,
   onBlockConfirmation,
@@ -36,7 +37,7 @@ export const useScaffoldContractWrite = <
   const wagmiContractWrite = useContractWrite({
     mode: "recklesslyUnprepared",
     chainId: configuredNetwork.id,
-    address: deployedContractData?.address,
+    address: cAddress? cAddress : deployedContractData?.address,
     abi: deployedContractData?.abi as Abi,
     args: args as unknown[],
     functionName: functionName as any,

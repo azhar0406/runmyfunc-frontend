@@ -17,24 +17,35 @@ import { ContractName } from "~~/utils/scaffold-eth/contract";
 type ContractUIProps = {
   contractName: ContractName;
   className?: string;
+  contractAddress?: string;
 };
 
 /**
  * UI component to interface with deployed contracts.
  **/
-export const ContractUI = ({ contractName, className = "" }: ContractUIProps) => {
+export const ContractUI = ({ contractName, contractAddress="",className = "" }: ContractUIProps) => {
   const provider = useProvider();
   const [refreshDisplayVariables, setRefreshDisplayVariables] = useState(false);
   const configuredNetwork = getTargetNetwork();
+
+  const [inputAddress, setInputAddress] = useState("");
+  const [tempinputAddress, tempsetInputAddress] = useState("");
+
+
 
   const { data: deployedContractData, isLoading: deployedContractLoading } = useDeployedContractInfo(contractName);
   const networkColor = useNetworkColor();
 
   const contract = useContract({
-    address: deployedContractData?.address,
+    address: inputAddress || deployedContractData?.address,
     abi: deployedContractData?.abi as Abi,
     signerOrProvider: provider,
   });
+  
+  const handleAddressSubmit = () => {
+    setInputAddress(tempinputAddress);
+  };
+
 
   const displayedContractFunctions = useMemo(() => getAllContractFunctions(contract), [contract]);
 
@@ -75,7 +86,23 @@ export const ContractUI = ({ contractName, className = "" }: ContractUIProps) =>
             <div className="flex">
               <div className="flex flex-col gap-1">
                 <span className="font-bold">{contractName}</span>
-                <Address address={deployedContractData.address} />
+                <Address address={inputAddress? inputAddress : deployedContractData.address} />
+                <div className="flex border-2 border-base-300 bg-base-200 rounded-full text-accent">
+                <input
+                  type="text"
+                  onChange={(e) => tempsetInputAddress(e.target.value)}
+                  placeholder="Your Custom Address"
+                  className="ownaddress input focus:outline-none focus:bg-transparent focus:text-gray-400 h-[2.2rem] min-h-[2.2rem] px-4 border w-full font-medium placeholder:text-accent/50 text-gray-400"
+                  style={{ backgroundColor: '#2c3757' }}
+                />
+                </div>
+
+                    <button
+                    className={`btn btn-secondary btn-sm normal-case font-thin bg-base-300`}
+                    onClick={handleAddressSubmit}
+                  >
+                   Set Contract
+                  </button>
                 <div className="flex gap-1 items-center">
                   <span className="font-bold text-sm">Balance:</span>
                   <Balance address={deployedContractData.address} className="px-0 h-1.5 min-h-[0.375rem]" />

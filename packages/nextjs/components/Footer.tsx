@@ -43,25 +43,25 @@ export const Footer = () => {
             </div>
             <span>·</span>
             <div>
-              Built with <HeartIcon className="inline-block h-4 w-4" /> at 🏰{" "}
+              Built with <HeartIcon className="inline-block h-4 w-4" /> by &nbsp; 
               <a
-                href="https://buidlguidl.com/"
+                href="https://twitter.com/azhar0406"
                 target="_blank"
                 rel="noreferrer"
                 className="underline underline-offset-2"
               >
-                BuidlGuidl
+                 0xAzhar.eth
               </a>
             </div>
             <span>·</span>
             <div>
               <a
-                href="https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA"
+                href="https://twitter.com/azhar0406"
                 target="_blank"
                 rel="noreferrer"
                 className="underline underline-offset-2"
               >
-                Support
+                Follw and Support
               </a>
             </div>
           </div>
