@@ -38,16 +38,16 @@ export const ContractInteraction = () => {
       setNewArgs(deployedContractData ? [...deployedContractData.args2] : []);
     };
 
-  const { writeAsync, isLoading } = useScaffoldContractWrite({
+const { writeAsync, isLoading } = useScaffoldContractWrite({
     contractName: "FunctionsConsumer",
     functionName: "executeRequest",
+    overrides: {gasLimit : BigNumber.from("450000")},
     cAddress: newContract,
     args: [newSource,`0x${newSecret}`,newArgs,BigNumber.from(newSubID? newSubID:0),Number(newGaslimit)],
     onBlockConfirmation: txnReceipt => {
       console.log("📦 Transaction blockHash", txnReceipt.blockHash);
     },
   });
-
   // console.log(newArgs);
   // const handleSecretChange = (event) => {
   //   let value = event.target.value;
