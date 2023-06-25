@@ -162,10 +162,9 @@ export const ContractInteraction = () => {
                   <input onChange={handleInputChange} value={newArgs} type="text" placeholder="Args[]" className="input font-bai-jamjuree w-full px-5 border border-primary text-md sm:text-1xl placeholder-black" />
                 </div>
                 <div className="flex items-center space-x-2 mt-2">
-                  <a href="javascript:void(0)" onClick={handleClickChange} className="text-blue-500 hover:underline">Get Sample Log</a>
-                  <p> | </p>
-                  <a href="javascript:void(0)" onClick={handleClickChange2} className="text-blue-500 hover:underline">Get Sample Storage</a>
-                </div>
+		<button onClick={handleClickChange} className="text-blue-500 hover:underline bg-transparent border-none cursor-pointer">Get Sample Log</button>
+		<p> | </p>
+                <button onClick={handleClickChange2} className="text-blue-500 hover:underline bg-transparent border-none cursor-pointer">Get Sample Storage</button>                </div>
               </div>              <div className="flex flex-col mt-5">
               <label className="text-1xl sm:text-1m text-black">Subscription ID:</label>
                 <input onChange={e => setNewSubID(e.target.value)} value={newSubID} type="text" placeholder="Subscription ID" className="input font-bai-jamjuree w-full px-5 border border-primary text-md sm:text-1xl placeholder-black " />
