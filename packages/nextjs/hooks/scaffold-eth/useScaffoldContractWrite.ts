@@ -43,6 +43,7 @@ export const useScaffoldContractWrite = <
     functionName: functionName as any,
     overrides: {
       value: value ? utils.parseEther(value) : undefined,
+      ...writeConfig.overrides,
     },
     ...writeConfig,
   });
@@ -84,3 +85,4 @@ export const useScaffoldContractWrite = <
     writeAsync: sendContractWriteTx,
   };
 };
+

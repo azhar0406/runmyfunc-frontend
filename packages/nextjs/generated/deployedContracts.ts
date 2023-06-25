@@ -18,8 +18,8 @@ const contracts = {
 	  args2:  [
             "0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889",
             "storage",
-            "0x0",
-            "N/A"
+            "0x01",
+            "latest"
           ],
           subscriptionId: "1678",
           gasLimit: "300000",
